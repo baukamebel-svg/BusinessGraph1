@@ -1,4 +1,3 @@
-
 import streamlit as st
 import pandas as pd
 import numpy as np
@@ -6,6 +5,11 @@ import plotly.graph_objects as go
 from io import BytesIO
 from datetime import datetime
 
+# Браузер кэшін тазалау үшін
+st.cache_data.clear()
+st.cache_resource.clear()
+
+# Бет баптауы
 st.set_page_config(page_title="BusinessGraph", page_icon="💼", layout="wide")
 
 LANGS = {
